@@ -2,10 +2,7 @@ name: Node.js Package
 
 on:
   workflow_call:
-    inputs:
-      runner:
-        required: true
-        type: string
+   
         
 permissions:
   id-token: write
