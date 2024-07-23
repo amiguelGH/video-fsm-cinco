@@ -8,5 +8,4 @@ jobs:
         matrix:
          os: [ubuntu-latest]
     uses: amiguelGH/video-fsm-tres/.github/workflows/workflow_call.yml@main
-    with:
-      runner: ${{ matrix.os }}
+    
