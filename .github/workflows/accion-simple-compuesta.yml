@@ -1,0 +1,12 @@
+name: Node.js CI - reutilizando accion-simple-compuesta
+on:
+  workflow_dispatch:
+  push:
+jobs:
+  test:
+    strategy:
+        matrix:
+         os: [ubuntu-latest]
+    uses: amiguelGH/video-fsm-tres/.github/workflows/workflow_call.yml@main
+    with:
+      runner: ${{ matrix.os }}
